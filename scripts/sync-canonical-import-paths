@@ -24,6 +24,7 @@ code.cloudfoundry.org/fileserver
 code.cloudfoundry.org/healthcheck
 code.cloudfoundry.org/inigo
 code.cloudfoundry.org/lager
+code.cloudfoundry.org/lds
 code.cloudfoundry.org/localip
 code.cloudfoundry.org/locket
 code.cloudfoundry.org/operationq

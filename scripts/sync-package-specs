@@ -45,6 +45,7 @@ sync_package diego-sshd              -app  code.cloudfoundry.org/diego-ssh/cmd/s
 sync_package file_server             -app  code.cloudfoundry.org/fileserver/cmd/file-server &
 sync_package locket                  -app  code.cloudfoundry.org/locket/cmd/locket &
 sync_package rep                     -app  code.cloudfoundry.org/rep/cmd/rep &
+sync_package lds                     -app  code.cloudfoundry.org/lds/cmd/lds &
 sync_package rep_windows             -app  code.cloudfoundry.org/rep/cmd/rep &
 sync_package route_emitter           -app  code.cloudfoundry.org/route-emitter/cmd/route-emitter &
 sync_package route_emitter_windows   -app  code.cloudfoundry.org/route-emitter/cmd/route-emitter &

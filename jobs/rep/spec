@@ -38,6 +38,7 @@ packages:
   - healthcheck
   - proxy
   - certsplitter
+  - lds
 
 properties:
   bpm.enabled:

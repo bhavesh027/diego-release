@@ -1,0 +1,8 @@
+---
+name: lds
+
+dependencies:
+  - golang
+
+files:
+  - code.cloudfoundry.org/lds/cmd/lds/*.go # gosub
