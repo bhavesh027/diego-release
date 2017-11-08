@@ -22,7 +22,6 @@
     declarative_healthcheck_path: p("declarative_healthcheck_path"),
     declarative_healthcheck_user: "",
     enable_container_proxy: p("container_proxy.enabled"),
-    additional_memory_allocation_mb: p("container_proxy.additional_memory_allocation_mb"),
     container_proxy_path: "/var/vcap/packages/proxy",
     container_proxy_config_path: "/var/vcap/data/rep/proxy_config",
     enable_legacy_api_endpoints: p("diego.rep.enable_legacy_api_endpoints"),
@@ -49,6 +48,7 @@
     placement_tags: p("diego.rep.placement_tags"),
     polling_interval: "#{p("diego.rep.polling_interval_in_seconds")}s",
     preloaded_root_fs: p("diego.rep.preloaded_rootfses"),
+    proxy_memory_allocation_mb: p("container_proxy.additional_memory_allocation_mb"),
     read_work_pool_size: p("diego.executor.read_work_pool_size"),
     require_tls: p("diego.rep.require_tls"),
     skip_cert_verify: p("diego.ssl.skip_cert_verify"),
@@ -58,7 +58,7 @@
     zone: spec.az || p("diego.rep.zone"),
   }
 
-  if config[:additional_memory_allocation_mb] < 0
+  if config[:proxy_memory_allocation_mb] < 0
     raise "additional_memory_allocation_mb cannot be negative"
   end
 
